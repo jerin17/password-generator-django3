@@ -11,7 +11,7 @@
 <form action="password">
 	<div class="container px-3 py-5 text-center" style="background: white;width:40%; min-height: 500px;box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);border-radius: 1rem">
 
-		<h5 style="margin-bottom: 2rem;font-weight: 300;font-size: 1.5rem;">Password Generator</h5>
+		<h5 style="margin-bottom: 2rem;font-weight: 400;font-size: 1.5rem;">Password Generator</h5>
 
 		<div class="input-group mb-4">
 		  <select class="custom-select" name="length">
@@ -33,7 +33,7 @@
 		<div class="input-group mb-4">
 		  <div class="input-group-prepend">
 		    <div class="input-group-text">
-		      <input type="checkbox">
+		      <input type="checkbox" name="uppercase">
 		    </div>
 		  </div>
 		  <h6 class="form-control">Include uppercase</h6>
@@ -42,7 +42,7 @@
 		<div class="input-group mb-4">
 		  <div class="input-group-prepend">
 		    <div class="input-group-text">
-		      <input type="checkbox">
+		      <input type="checkbox" name="numbers">
 		    </div>
 		  </div>
 		  <h6 class="form-control">Include numbers</h6>
@@ -51,7 +51,7 @@
 		<div class="input-group mb-4">
 		  <div class="input-group-prepend">
 		    <div class="input-group-text">
-		      <input type="checkbox">
+		      <input type="checkbox" name="special">
 		    </div>
 		  </div>
 		  <h6 class="form-control">Include special characters</h6>
@@ -61,6 +61,12 @@
 	</div>
 </form>
 </div>
+
+<footer class="float-right">
+  <div class="container mt-5">
+  	<p style="font-size: 90%;">© {% now "Y" %} Password Generator. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
