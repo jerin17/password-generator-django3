@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body style="background: #007bff;background: linear-gradient(to right, #0062E6, #33AEFF);">
+<div class="container mt-5">
+
+<form action="password">
+	<div class="container px-3 py-5 text-center" style="background: white;width:40%; min-height: 500px;box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);border-radius: 1rem">
+
+		<h5 style="margin-bottom: 2rem;font-weight: 300;font-size: 1.5rem;">Password Generator</h5>
+
+		<div class="input-group mb-4">
+		  <select class="custom-select" name="length">
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10" selected="selected">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+		  </select>
+		  <div class="input-group-append">
+		    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+		  </div>
+		</div>
+
+		<div class="input-group mb-4">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox">
+		    </div>
+		  </div>
+		  <h6 class="form-control">Include uppercase</h6>
+		</div>		
+
+		<div class="input-group mb-4">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox">
+		    </div>
+		  </div>
+		  <h6 class="form-control">Include numbers</h6>
+		</div>		
+
+		<div class="input-group mb-4">
+		  <div class="input-group-prepend">
+		    <div class="input-group-text">
+		      <input type="checkbox">
+		    </div>
+		  </div>
+		  <h6 class="form-control">Include special characters</h6>
+		</div>		
+
+		<input class="btn btn-primary text-uppercase mt-3" type="submit" value="Generate Password" />
+	</div>
+</form>
+</div>
+
+</body>
+</html>
